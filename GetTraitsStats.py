@@ -54,10 +54,9 @@ for i in range(len(name)):
         print("Saving Results.....")
         profile['Actor Name'] = name[i]
         profile['Image Link'] = Image_Link[i]
-        out_file = open(r"C:\Users\Prashant\Desktop\Celebrities_personality_Traits\Traits_Data\{}.json".format(name[i]+"_Personality_Traits"), "w") 
+        out_file = open(r"Your_Path\Traits_Data\{}.json".format(name[i]+"_Personality_Traits"), "w") 
         json.dump(profile, out_file, indent = 6)
         print("Result Saved[{}+1]".format(i))
-        out_file.close()
         out_file.close()
     else:
         print("No Tweets for the user!!!!")
