@@ -1,7 +1,7 @@
 # Deriving insights from Twitter Using IBM Watson Personality Insights Service
 I was inspired to do this kind of project because writing(the mind thoughts) tells you the different personality traits about a person. To build a such type of system I suppose to use twitter(https://www.twitter.com) to get the tweets data of any person.
 ## File Details
-- Traits_Data(Folder): This folder contains the personality traits scores of different bollywood actors/actress.
+- Traits_Data(Folder): This folder contains the personality traits scores of different bollywood actors/actress.Contains one json file for each celebrity()
 - Final_Celebrities_Data.csv : This csv file contains tha image link,actor name and his/her twitter handle used to parse the list of twitter handles
 - GetTraitsStats.py : This file contains the python code used to calculate scores.
 ## Approach
