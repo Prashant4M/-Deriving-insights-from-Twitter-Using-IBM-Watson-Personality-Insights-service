@@ -32,7 +32,7 @@ def convert_tweet_to_feedable_form(s):
 twitter_handles = pd.read_csv('Final_Celebrities_Data.csv')
 name = list(twitter_handles['Actor Name'])
 twitter_handle = list(twitter_handles['Twitter Handle'])
-Image_Link = list(twitter_handles['Image_Link'])
+image_Link = list(twitter_handles['Image_Link'])
 
 #Getting the tweets of the user
 for i in range(len(name)):
@@ -53,7 +53,7 @@ for i in range(len(name)):
         ).get_result()
         print("Saving Results.....")
         profile['Actor Name'] = name[i]
-        profile['Image Link'] = Image_Link[i]
+        profile['Image Link'] = image_Link[i]
         out_file = open(r"Your_Path\Traits_Data\{}.json".format(name[i]+"_Personality_Traits"), "w") 
         json.dump(profile, out_file, indent = 6)
         print("Result Saved[{}+1]".format(i))
