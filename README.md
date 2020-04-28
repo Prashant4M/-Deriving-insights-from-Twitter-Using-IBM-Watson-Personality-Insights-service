@@ -1,4 +1,4 @@
-# Deriving insights from Twitter Using IBM Watson Personality Insightsservice
+# Deriving insights from Twitter Using IBM Watson Personality Insights Service
 I was inspired to do this kind of project because writing(the mind thoughts) tells you the different personality traits about a person. To build a such type of system I suppose to use twitter(www.twitter.com) to get the tweets data of any person.
 # Approach
 * Getting the twitter account details
