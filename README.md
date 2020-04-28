@@ -1,21 +1,26 @@
 # Deriving insights from Twitter Using IBM Watson Personality Insights Service
-I was inspired to do this kind of project because writing(the mind thoughts) tells you the different personality traits about a person. To build a such type of system I suppose to use twitter(www.twitter.com) to get the tweets data of any person.
-# Approach
+I was inspired to do this kind of project because writing(the mind thoughts) tells you the different personality traits about a person. To build a such type of system I suppose to use twitter(https://www.twitter.com) to get the tweets data of any person.
+## File Details
+- Traits_Data(Folder): This folder contains the personality traits scores of different bollywood actors/actress.
+- Final_Celebrities_Data.csv : This csv file contains tha image link,actor name and his/her twitter handle used to parse the list of twitter handles
+- GetTraitsStats.py : This file contains the python code used to calculate scores.
+## Approach
 * Getting the twitter account details
 * Geting tweets of any particular user
 * Preprocessing and cleaning the tweets
 * Using Personality Insights instance
 * Save the respose as a csv or json file
+* See the score and interpreing the values
 
-# Getting the twitter account details
+###### Getting the twitter account details
 The list of Twitter-active
 Indian celebrities and their Twitter handles was gathered
 using statistics available in social media analytics website
 [Socialbakers](https://www.socialbakers.com).
-# Geting tweets of any particular user
+###### Geting tweets of any particular user
 For retrieving the tweets I used:
 - [GetOldTweets](https://pypi.org/project/GetOldTweets3/) : A Python 3 library and a corresponding command line utility for accessing old tweets.
-# Preprocessing and cleaning the tweets
+###### Preprocessing and cleaning the tweets
 The collected tweets cannot directly be used for personality
 determination for several reasons.
 - Some of the tweets may be retweets. The retweets are
@@ -46,7 +51,11 @@ processing. Hyperlinks in tweets were also identified and
 deleted.
 - For detailed approach you can refer to [Analyzing Big-Five Personality Traits of Indian Celebrities Using
 Online Social Media](https://link.springer.com/article/10.1007/s12646-017-0408-8?shared-article-renderer)
-# Using Personality Insights instance
+###### Using Personality Insights instance
 for the use of PI service you can refer to the [Official API Docs Page](https://cloud.ibm.com/apidocs/personality-insights?code=python)
 # Save the respose as a csv or json file
 Refer to [this page](https://cloud.ibm.com/docs/services/personality-insights?topic=personality-insights-output)
+###### See the score and interpreing the values:
+
+- [Interpreting the numeric result](https://cloud.ibm.com/docs/services/personality-insights?topic=personality-insights-numeric#percentiles)
+- [Raw result and Percentil](http://www.csun.edu/~vcpsy015/wk2.htm)
