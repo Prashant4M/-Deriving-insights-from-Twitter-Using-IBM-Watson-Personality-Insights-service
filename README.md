@@ -11,7 +11,7 @@ I was inspired to do this kind of project because writing(the mind thoughts) tel
 The list of Twitter-active
 Indian celebrities and their Twitter handles was gathered
 using statistics available in social media analytics website
-[Socialbakers](www.socialbakers.com).
+[Socialbakers](https://www.socialbakers.com).
 # Geting tweets of any particular user
 For retrieving the tweets I used:
 - [GetOldTweets](https://pypi.org/project/GetOldTweets3/) : A Python 3 library and a corresponding command line utility for accessing old tweets.
